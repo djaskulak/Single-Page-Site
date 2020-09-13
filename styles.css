@@ -217,6 +217,14 @@ nav ul a:hover {
     color: #eee;
     text-shadow: 0 0 20px #000;
 
+    background-image: url(images/knit-2383066.jpg);
+    background-size: cover;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
