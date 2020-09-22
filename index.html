@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Cats in History and Symbolism</title>
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <title>Cats</title>
         <link rel="stylesheet" href="styles.css">
+        <!--Animate on scroll link step 1-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
-    <main>
+    <body>
+        <main>
         <!--here will be all the links and whatnot-->
         <nav id="nav">
             <h1><a href="">Cats and Beyond</a></h1>
@@ -27,8 +29,10 @@
         <!--this section will contain the FIRST topic-->
         <section id="cats-global">
             <h2>Around the World</h2>
-            <ul class="list">
-                <li class="card">
+            <ul class="list" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom"
+            data-aos-delay="100">
+                <li class="card" data-aos-delay="100">
                     <img src="images/egypt-140372.jpg">
                     <h3>Egypt</h3>
                     <p>Cats were worshipped and even mummified with their owners. 
@@ -37,14 +41,14 @@
                     </p>
                 </li>
 
-                <li class="card">
+                <li class="card" data-aos-delay="200">
                     <img src="images/maneki-neko-453120.jpg">
                     <h3>China</h3>
                     <p>During the Song Dynasty, cats were a popular pet of the rich 
                         after the Emperor was given one in 500 BCE.</p>
                 </li>
 
-                <li class="card">
+                <li class="card" data-aos-delay="300">
                     <img src="images/cat-77901.jpg">
                     <h3>Italy</h3>
                     <p>Romans valued cats highly for pest control. Cats came into 
@@ -56,7 +60,8 @@
 
         <!--this section will contain the SECOND topic-->
         <section id="purr">
-            <div>
+            <div data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom">
                 <h2>Effect on Your Health</h2>
                 <p>Research has shown...</p>
                 <ul>
@@ -70,7 +75,9 @@
         <!--this section will contain the THIRD topic-->
         <section id="adopt">
             <div>
-                <section>
+                <section data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
+                data-aos-delay="100">
                     <h2>Adopt</h2>
                     <p>There are multiple options for adopting a cat or kitten:</p>
                     <ul>
@@ -79,7 +86,9 @@
                         <li>Adopt from a sanctuary or rescue</li>
                     </ul>
                 </section>
-                <div>
+                <div data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom"
+                data-aos-delay="1000">
                     <img src="images/cat-3790477.png">
                 </div>
             </div>
@@ -120,5 +129,12 @@
             </form>
 
         </footer>
-    </main>
+        </main>
+        <!--JS tag always goes at the botton of the body step 2-->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <!--Animate on scroll step 3-->
+        <script>
+            AOS.init();
+        </script>
+    </body>
 </html>
